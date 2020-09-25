@@ -1,0 +1,47 @@
+﻿@model IEnumerable<PullOpenSource.Models.DatosEmpleado>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpleadoId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sueldo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NoCuenta)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpleadoId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sueldo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoCuenta)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.DatosEmpleadoId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.DatosEmpleadoId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.DatosEmpleadoId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

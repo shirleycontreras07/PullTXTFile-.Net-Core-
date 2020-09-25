@@ -1,0 +1,48 @@
+﻿@model PullOpenSource.Models.DatosEmpresa
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DatosEmpresa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoRegistro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoRegistro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoArchivo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoArchivo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Identificacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Identificacion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Periodo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Periodo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CodigoMoneda)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CodigoMoneda)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.DatosEmpresaID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

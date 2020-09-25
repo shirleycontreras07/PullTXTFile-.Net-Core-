@@ -1,0 +1,51 @@
+﻿@model PullOpenSource.Models.DatosEmpresa
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>DatosEmpresa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoRegistro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoRegistro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoArchivo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoArchivo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Identificacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Identificacion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Periodo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Periodo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CodigoMoneda)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CodigoMoneda)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="DatosEmpresaID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

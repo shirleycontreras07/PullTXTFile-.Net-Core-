@@ -1,0 +1,59 @@
+﻿@model IEnumerable<PullOpenSource.Models.DatosEmpresa>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoRegistro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoArchivo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Identificacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Periodo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodigoMoneda)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoRegistro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoArchivo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Identificacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Periodo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodigoMoneda)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.DatosEmpresaID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.DatosEmpresaID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.DatosEmpresaID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

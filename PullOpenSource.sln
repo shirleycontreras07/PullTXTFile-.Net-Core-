@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PullOpenSource", "PullOpenSource\PullOpenSource.csproj", "{BDEFDE08-06CC-4E07-91E4-3C7718995261}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDEFDE08-06CC-4E07-91E4-3C7718995261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDEFDE08-06CC-4E07-91E4-3C7718995261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDEFDE08-06CC-4E07-91E4-3C7718995261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDEFDE08-06CC-4E07-91E4-3C7718995261}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79BB4569-671B-45D3-81C7-B3FE8C0472F5}
+	EndGlobalSection
+EndGlobal
